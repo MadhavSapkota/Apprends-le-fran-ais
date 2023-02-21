@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#FFFFFF</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="colorSecond">#F4F2F3</color>
+	<color name="colorOrange">#FF6F00</color>
+	<color name="colorNavigationHome">#FFFFFF</color>
+	<color name="black">#1D1D1F</color>
+	
+	<color name="deepcolorOrange">#FF3D00</color>
+	<color name="lightcolorOrange">#D50000</color>
+	<color name="colorDialog">#E6DAD1</color>
+	
+	
+	
+	<color name = "drawerfooterColor">#BD3ED1</color>
+	
+	<color name="linkColor">#00BFFF</color>
+	<color name="linkColor1">#F8F8E9</color>
+	<color name="bottom_navigation_item_color">#FBFAFA</color>
+	<color name="colorRedDeep">#D50000</color>
+	
+	
+	<color name="blackColor">#000000</color>
+	<color name="editTextColor">#C0C0C0</color>
+	<color name="blue">#42A7DF</color>
+	<color name="background">#E5E5E5</color>
+	<color name="colorWhite">#FCFCFC</color>
+	<color name="colorRed">#A90000</color>
+	<color name="light_gray">#ABABAB</color>
+	<color name="signupColor">#066e8a</color>
+	<color name="countryColor">#C0C0C0</color>
+	<color name="colorGradientStart">#DFF194</color>
+	<color name="colorGradientCenter">#31F6D8</color>
+	<color name="colorGradientEnd">#F4B2D6</color>
+	<color name="colordashboard">#F1F8E9</color>
+	<color name="colorPrimaryLightGray">#B4B8C6</color>
+	<!--	<color name="black">#1D1D1F</color>-->
+	<color name="colorSolid">#DAD5D5</color>
+	<!--	<color name="white">#FFFFFF</color>-->
+	<color name="grammar">#fff2df</color>
+	<color name="tense">#E8F5E9</color>
+	<color name="confused">#F3E5F5</color>
+	<color name="writings">#E1F5FE</color>
+	<color name="test">#FCE4EC</color>
+	
+	
+	
+	
+	<string-array name="colorFont">
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#C0C0C0</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+		<item>#00BFFF</item>
+	
+	</string-array>
+	
+	<color name="text_black">#1D1D1F</color>
+	<color name="primaryBlue">#1E85C5</color>
+	<color name="colorPrimary500">#444E55</color>
+	<color name="colorPrimaryWhite">#505565</color>
+	<color name="colorPrimaryBlack">#505565</color>
+	<color name="colorPrimaryBlack12">#505565</color>
+	<color name="colorLightShadow">#40B4BBC6</color>
+	<color name="colorDeepShadow">#9699A0</color>
+	<color name="colorSeeMoreNews">#7D808A</color>
+	<color name="light_green">#45A48E</color>
+	
+	<color name="colorPrimaryPink">#B4B8C6</color>
+	<color name="colorPrimaryPink1">#B4B8C6</color>
+	<color name="colorPrimaryPinkOpacity">#40B4B8C6</color>
+	<color name="colorGrayButtonIcon">#505565</color>
+	<color name="colorEditTextFieldColorHint">#C1C1C1</color>
+	
+	<color name="colorGreen">#45a48e</color>
+	<color name="colorLightBlue">#1E85c5</color>
+	<color name="colorGrayOpacity">#33B4B8C6</color>
+	<color name="colorBlack">#1D1D1F</color>
+	<color name="colorBlackSplash">#1D1D1F</color>
+	<color name="colorBlack344">#1D1D1F</color>
+	<color name="colorBlack1">#1D1D1F</color>
+	<color name="colorBlack2">#1D1D1F</color>
+	<color name="colorBlack3">#1D1D1F</color>
+	<color name="colorgrayshadow">#86868B</color>
+	<color name="toolbar_white">#ffffff</color>
+	<color name="quickAccess">#25B4BBC6</color>
+	
+	<color name="whiteCalendar">#FFFFFF</color>
+	
+	<color name="quick_card">#FFFFFF</color>
+	<color name="language_text">#1D1D1F</color>
+	<color name="language_white">#FFFFFF</color>
+	<color name="gray">#F1F1F1</color>
+	<color name="blackOpacity">#481D1D1F</color>
+	<color name="whiteOpacity">#BFFFFFFF</color>
+	<color name="colorGray">#80B4B8C6</color>
+	<color name="colorGradientFirst">#00C4C4C4</color>
+	<color name="black_80_Opacity">#CC1D1D1F</color>
+	<color name="transparent">#80000000</color>
+	<color name="transparent1">#80000000</color>
+	<color name="circle">#1E85C5</color>
+	<color name="colorDefault">#FFFFFF</color>
+	<color name="colorPrimaryLight">#32B4B8C6</color>
+	<color name="colorLight">#B4B8C6</color>
+	<color name="enter_key_bg_black">#1a73e9</color>
+	<color name="primary_green">#45A48E</color>
+	<color name="primary_yellow">#F6C707</color>
+	<color name="primary_back_button_color">#F0F1F4</color>
+
+</resources>

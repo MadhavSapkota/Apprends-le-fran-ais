@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root_layout"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_height="match_parent">
+	
+	<!--      android:background="@drawable/gradient_animation"-->
+	
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="@dimen/_20sdp">
+		
+		
+		<ImageView
+			android:id="@+id/backgroundImage"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/_145sdp"
+			android:layout_alignParentTop="true"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/_70sdp"
+			android:src="@drawable/splash_logo" />
+		
+		
+<!--		<com.agrawalsuneet.dotsloader.loaders.TashieLoader-->
+<!--			android:layout_width="230dp"-->
+<!--			android:layout_height="46dp"-->
+<!--			android:layout_centerVertical="true"-->
+<!--			android:layout_below="@+id/backgroundImage"-->
+<!--			android:layout_centerHorizontal="true"-->
+<!--			android:layout_marginTop="@dimen/_15sdp"-->
+<!--			app:tashieloader_animDelay="200"-->
+<!--			app:tashieloader_animDur="6000"-->
+<!--			app:tashieloader_dotsColor="#215CF3"-->
+<!--			app:tashieloader_dotsDist="10dp"-->
+<!--			app:tashieloader_dotsRadius="4dp"-->
+<!--			app:tashieloader_interpolator="@android:anim/accelerate_interpolator"-->
+<!--			app:tashieloader_noOfDots="5" />-->
+		
+		<TextView
+			android:id="@+id/editTextTextPersonName3"
+			style="@style/text_bold_english_grammar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/tvGetStarted"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="@dimen/_6sdp"
+			android:text="English Grammar" />
+		
+		
+		<TextView
+			android:id="@+id/tvGetStarted"
+			style="@style/text_cursive_get_started"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_horizontal"
+			android:text="Get Started" />
+	</RelativeLayout>
+</LinearLayout>

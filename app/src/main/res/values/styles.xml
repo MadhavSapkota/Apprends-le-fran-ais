@@ -1,0 +1,675 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorSurface">@color/colorPrimary</item>
+    </style>
+    
+    <style name="text_cursive_get_started">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/great_vibes</item>
+    </style>
+    
+    
+    <style name="paragraph_error_login_subheader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/mukta_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    
+    
+    <style name="IconOnlyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        
+        <item name="materialThemeOverlay">@style/KeyboardEmojiRadioButtonStyle</item>
+    </style>
+    <style name="KeyboardEmojiRadioButtonStyle">
+        <item name="colorPrimary">@color/enter_key_bg_black</item>
+        <item name="colorPrimaryDark">@color/enter_key_bg_black</item>
+    </style>
+    
+    
+    
+    <style name="text_16_paragraph_small">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/mukta_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    
+    
+    <style name="text_bold_english_grammar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/adamina</item>
+    </style>
+    
+    <style name="text_drawer_header">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/abril_fatface</item>
+        <item name="android:textColor">#F5F5F5</item>
+    </style>
+    
+    <style name="text_drawer_subheader">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="text_drawer_subheader_foo">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#F5F5F5</item>
+    </style>
+    
+    <style name="text_drawer_header_footer">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/mukta_light</item>
+    </style>
+    
+    <style name="text_drawer_subheader_footer">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/mukta_light</item>
+    </style>
+    
+    
+    <style name="text_dashboard_app_name">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#FF6F00</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    
+    <style name="text_dashboard_app_name_subtitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF6F00</item>
+    </style>
+    
+    
+    <style name="text_dashboard_subject_subtitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackColor</item>
+        <item name="android:fontFamily">@font/archivonarrow_variablefont_wght</item>
+    </style>
+    
+    
+    
+<!--    <style name="text_dashboard_title">-->
+<!--        <item name="android:textSize">18sp</item>-->
+<!--        <item name="android:fontFamily">@font/archivonarrow_regular</item>-->
+<!--    </style>-->
+    
+    <style name="text_dashboard_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blackColor</item>
+        <item name="android:textStyle">bold</item>
+        
+      
+    </style>
+    
+    
+    <style name="grammar_dashboard_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blackColor</item>
+<!--        <item name="android:textStyle">bold</item>-->
+    </style>
+    
+    
+    
+    <style name="toolbar_header">
+        <item name="android:layout_height">@dimen/_50sdp</item>
+    
+    </style>
+    
+<!--    <style name="text_16_black_header1">-->
+<!--        <item name="android:textSize">25sp</item>-->
+<!--        <item name="android:fontFamily">@font/mukta_semibold</item>-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--    </style>-->
+    
+    <style name="text_16_grammar_text_toolbar">
+        <item name="android:textSize">23sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_semibold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+<!--    archivonarrow_variablefont_wght-->
+    
+    
+    <style name="nav_menu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#F5F5F5</item>
+    </style>
+    
+    
+<!--    -->
+<!--    <resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--        &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--            <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--            <item name="android:statusBarColor" tools:targetApi="l">@color/colorRed</item>-->
+<!--            <item name="colorPrimaryDark">@android:color/white</item>-->
+<!--        -->
+<!--        -->
+<!--        </style>-->
+        
+        <style name="paragraph_small_medium_news">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_semibold</item>
+            <item name="android:lineHeight" tools:ignore="NewApi">20sp</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+        </style>
+        
+        <style name="DarkThemes" parent="Theme.AppCompat.DayNight.NoActionBar">
+            <item name="colorPrimary">@color/colorWhite</item>
+            <item name="colorOnSecondary">@color/colorWhite</item>
+            
+            <item name="android:statusBarColor" tools:targetApi="l">@color/colorWhite</item>
+        </style>
+        
+<!--        <style name="SpinnerThemeForexLeft" parent="android:Widget.Spinner">-->
+<!--            <item name="android:background">@drawable/spinner_country</item>-->
+<!--        </style>-->
+<!--        -->
+<!--        <style name="SpinnerThemeShare" parent="android:Widget.Spinner">-->
+<!--            <item name="android:background">@drawable/share_spinner_pujigat</item>-->
+<!--        </style>-->
+<!--        -->
+<!--        -->
+<!--        <style name="SpinnerThemeForexRight" parent="android:Widget.Spinner">-->
+<!--            <item name="android:background">@drawable/spinner_country_right</item>-->
+<!--        </style>-->
+        
+        <!--Dashboard Screen-->
+        <style name="text_14_gray">
+            <item name="android:textSize">15sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        
+        <style name="text_14_hex">
+            <item name="android:textSize">15.5sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/black_80_Opacity</item>
+        </style>
+        
+        <style name="text_16_primarylight">
+            <item name="android:textSize">17sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/black_80_Opacity</item>
+        </style>
+        
+        
+        
+        <style name="tab_unslected">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorPrimaryPink</item>
+        </style>
+        
+        <style name="text_12_gray">
+            <item name="android:textSize">13.9sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorgrayshadow</item>
+            <item name="lineHeight">11sp</item>
+            <item name="fontWeight">400</item>
+            <item name="android:letterSpacing">0</item>
+        </style>
+        
+        <style name="text_12_gray_1">
+            <item name="android:textSize">14.5sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="lineHeight">11sp</item>
+            <item name="fontWeight">400</item>
+            <item name="android:letterSpacing">0</item>
+        </style>
+        
+        
+        <style name="text_16_black">
+            <item name="android:textSize">28sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+            <item name="lineHeight">27.5sp</item>
+        </style>
+        
+        <style name="text_16_black_header">
+            <item name="android:textSize">25sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorWhite</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+            <item name="lineHeight">27.5sp</item>
+        </style>
+        
+        <style name="text_16_black_header1">
+            <item name="android:textSize">25sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+        </style>
+        
+        
+        <style name="text_16_black_small1">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+            <item name="lineHeight">27.5sp</item>
+        </style>
+        
+        
+        <style name="text_16_black1">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+            <item name="lineHeight">27.5sp</item>
+        </style>
+        
+        <style name="paragraph_small_black">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorBlack2</item>
+        </style>
+        
+        <style name="paragraph_small_black1">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorBlack3</item>
+        </style>
+        
+        
+        
+        <style name="paragraph_small_14">
+            <item name="android:textSize">15sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        
+        <style name="paragraph_small_14_1">
+            <item name="android:textSize">20sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+    
+    <style name="paragraph_small_12_1">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_regular</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+    </style>
+    
+    
+        
+        <style name="paragraph_small_white">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorGray</item>
+        </style>
+        
+        
+        <style name="text_12_shades">
+            <item name="android:textSize">13.7sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/black_80_Opacity</item>
+        </style>
+        
+        <style name="text_12_shades_1">
+            <item name="android:textSize">14sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/black_80_Opacity</item>
+        </style>
+        
+        <style name="paragraph_medium">
+            <item name="android:textSize">19.5sp</item>
+            <item name="android:fontFamily">@font/mukta_semibold</item>
+            <item name="fontWeight">600</item>
+            <item name="android:textColor">@color/colorBlack</item>
+        </style>
+    
+    <style name="paragraph_light">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    
+    <style name="paragraph_vocab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/mukta_light</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    
+    <style name="paragraph_little_light">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_regular</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    
+    <style name="paragraph_big_light">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_regular</item>
+        <item name="android:textColor">#FF6F00</item>
+    </style>
+    
+    
+    <style name="paragraph_black_heavy">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_semibold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    
+        
+        <style name="splash_text">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/garamond_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/colorBlack</item>
+        </style>
+        
+    
+        
+        <style name="text_22_black">
+            <item name="android:textSize">21sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorBlack</item>
+        </style>
+        
+        <style name="text_14_black">
+            <item name="android:textSize">15.5sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_14_black1">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_regular_14_black">
+            <item name="android:textSize">12sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorPrimary500</item>
+        </style>
+        
+        <style name="text_14">
+            <item name="android:textSize">14sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_12_black">
+            <item name="android:textSize">14sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorgrayshadow</item>
+        </style>
+        
+        <style name="text_12_black_1">
+            <item name="android:textSize">15sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorgrayshadow</item>
+        </style>
+        
+        
+        <!-- Language setting screen-->
+        <style name="paragraph_small_medium">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_semibold</item>
+            <item name="android:textColor">@color/colorPrimary500</item>
+        </style>
+        
+        
+        <style name="paragraph_small_medium_1">
+            <item name="android:textSize">17sp</item>
+            <item name="android:fontFamily">@font/mukta_semibold</item>
+            <item name="android:textColor">@color/colorPrimaryWhite</item>
+        </style>
+        
+        <style name="text_28_black">
+            <item name="android:textSize">26sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack1</item>
+        </style>
+        
+        <style name="text_26_black_1">
+            <item name="android:textColor">@color/colorPrimaryPink1</item>
+        </style>
+        
+        <style name="paragraph_regular">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+        </style>
+        
+        <!--Today's News-->
+        <style name="text_22_bold_black">
+            <item name="android:textSize">21sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+        
+        
+        <style name="text_22_bold_black12">
+            <item name="android:textSize">21sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        
+        <style name="text_22_bold_black1">
+            <item name="android:textSize">21sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+        
+        <style name="text_22_bold_black21">
+            <item name="android:textSize">21sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/blackColor</item>
+        </style>
+        
+        <style name="text_17_bold_black">
+            <item name="android:textSize">19sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack</item>
+        </style>
+        
+        <style name="text_17_bold_black12">
+            <item name="android:textSize">20sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorBlack</item>
+        </style>
+        
+        
+        <style name="text_17_bold_black123">
+            <item name="android:textSize">30sp</item>
+            <item name="lineHeight">40sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/blackOpacity</item>
+        </style>
+        
+        
+        
+        <style name="text_28_gray_bold">
+            <item name="android:textSize">28sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="android:textColor">@color/colorGrayOpacity</item>
+            <item name="android:lineHeight" tools:ignore="NewApi">40dp</item>
+        </style>
+        
+        <style name="text_14_primary500">
+            <item name="android:textSize">@dimen/_16sdp</item>
+            <item name="android:fontFamily">@font/mukta_light</item>
+            <item name="fontWeight">300</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_14_primary5001">
+            <item name="android:textSize">@dimen/_16sdp</item>
+            <item name="android:fontFamily">@font/mukta_light</item>
+            <item name="fontWeight">300</item>
+            <item name="android:textColor">@color/blackColor</item>
+        </style>
+        
+        <style name="text_22_primaryBlack">
+            <item name="android:textSize">23sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/blackColor</item>
+        </style>
+        
+        <style name="text_16_primaryBlack">
+            <item name="android:textSize">23sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/blackColor</item>
+        </style>
+        
+        <style name="text_15_primaryBlack">
+            <item name="android:textSize">17sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_17_black">
+            <item name="android:textSize">@dimen/_24sdp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorBlack344</item>
+        </style>
+        
+        <style name="text_17_black1">
+            <item name="android:textSize">@dimen/_20sdp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorBlack344</item>
+        </style>
+        
+        
+        <style name="text_17_white">
+            <item name="android:textSize">@dimen/_24sdp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        
+        <style name="RatingBar" parent="Theme.AppCompat">
+            <item name="colorControlNormal">@color/transparent</item>
+            <item name="colorControlActivated">@color/colorGreen</item>
+        </style>
+        
+        <style name="text_17_black_heading">
+            <item name="android:textSize">24sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorBlack344</item>
+        </style>
+        
+        
+        <style name="text_28_black_heading">
+            <item name="android:textSize">29sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorBlack344</item>
+        </style>
+        
+        
+        <style name="text_15_black_heading">
+            <item name="android:textSize">14sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorGrayButtonIcon</item>
+        </style>
+        
+        <style name="text_15_gray">
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/colorGray</item>
+        </style>
+        
+        <style name="text_15_black">
+            <item name="android:textSize">@dimen/_14sdp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/blackColor</item>
+        </style>
+        
+        <style name="text_16_white">
+            <item name="android:textSize">19sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        
+        <style name="text_16_white_1">
+            <item name="android:textSize">16sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/colorPrimaryWhite</item>
+        </style>
+        
+        
+        <style name="text_level_title">
+            <item name="android:textSize">@dimen/_14sdp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorPrimaryWhite</item>
+        </style>
+        
+        <style name="text_level_value">
+            <item name="android:textSize">@dimen/_14sdp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+        
+        </style>
+        
+        
+        <style name="text_16_primary500">
+            <item name="android:textSize">17sp</item>
+            <item name="android:fontFamily">@font/mukta_bold</item>
+            <item name="fontWeight">700</item>
+            <item name="android:textColor">@color/colorPrimaryBlack</item>
+        </style>
+        
+        <style name="text_16_primaryLight400">
+            <item name="android:textSize">13.5sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="fontWeight">400</item>
+            <item name="android:textColor">@color/colorGray</item>
+        </style>
+        
+        <style name="text_16_black_regular">
+            <item name="android:textSize">17sp</item>
+            <item name="android:fontFamily">@font/mukta_regular</item>
+            <item name="android:textColor">@color/text_black</item>
+            <item name="android:fontWeight" tools:ignore="NewApi">700</item>
+            <item name="lineHeight">27sp</item>
+        </style>
+    
+    <style name="ShapeAppearanceOverlay.App.CornerSize6Percent" parent="">
+        <item name="cornerSize">2%</item>
+    </style>
+    
+    <style name="ShapeAppearanceOverlay.App.CornerSizePercent" parent="">
+        <item name="cornerSize">1%</item>
+    </style>
+    
+    <style name="ShapeAppearanceOverlay.App.CornerSize8Percent" parent="">
+        <item name="cornerSize">4%</item>
+    </style>
+    
+    
+    <style name="ShapeAppearanceOverlay.App.CornerSize20Percent" parent="">
+        <item name="cornerSize">20%</item>
+    </style>
+    
+    
+    
+</resources>
