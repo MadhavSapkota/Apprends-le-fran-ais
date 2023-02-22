@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/root_layout"
 	android:layout_width="match_parent"
 	android:orientation="vertical"
-	android:layout_height="match_parent">
-	
-	<!--      android:background="@drawable/gradient_animation"-->
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
 	
 	
 	<RelativeLayout
@@ -16,13 +17,23 @@
 		
 		<ImageView
 			android:id="@+id/backgroundImage"
-			android:layout_width="wrap_content"
-			android:layout_height="@dimen/_145sdp"
+			android:layout_width="350dp"
+			android:layout_height="285dp"
 			android:layout_alignParentTop="true"
 			android:layout_centerInParent="true"
 			android:layout_gravity="center"
-			android:layout_marginTop="@dimen/_70sdp"
-			android:src="@drawable/splash_logo" />
+			android:layout_marginTop="4dp"
+			android:src="@drawable/logo_splash" />
+		
+		<com.razzaghimahdi78.dotsloading.linear.LoadingFady
+			android:layout_width="230dp"
+			android:layout_height="46dp"
+			app:dots_color="@color/colorSecondary"
+			app:dots_count="5"
+			android:layout_below="@+id/backgroundImage"
+			android:layout_centerHorizontal="true"
+			app:dots_duration="500"
+			app:dots_size="small" />
 		
 		
 <!--		<com.agrawalsuneet.dotsloader.loaders.TashieLoader-->
@@ -38,7 +49,7 @@
 <!--			app:tashieloader_dotsDist="10dp"-->
 <!--			app:tashieloader_dotsRadius="4dp"-->
 <!--			app:tashieloader_interpolator="@android:anim/accelerate_interpolator"-->
-<!--			app:tashieloader_noOfDots="5" />-->
+<!--			tools:ignore="MissingClass" />-->
 		
 		<TextView
 			android:id="@+id/editTextTextPersonName3"
@@ -48,7 +59,7 @@
 			android:layout_above="@+id/tvGetStarted"
 			android:layout_centerHorizontal="true"
 			android:layout_marginBottom="@dimen/_6sdp"
-			android:text="English Grammar" />
+			android:text="Apprends Le Français" />
 		
 		
 		<TextView

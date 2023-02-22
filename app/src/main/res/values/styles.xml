@@ -6,8 +6,10 @@
     </style>
     
     <style name="text_cursive_get_started">
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/great_vibes</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/adamina</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        
     </style>
     
     
@@ -43,6 +45,7 @@
     <style name="text_bold_english_grammar">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/adamina</item>
+        <item name="android:textColor">@color/colorSecondary</item>
     </style>
     
     <style name="text_drawer_header">
