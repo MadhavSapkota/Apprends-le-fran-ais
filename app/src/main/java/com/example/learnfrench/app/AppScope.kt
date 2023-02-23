@@ -1,4 +1,2 @@
-package com.learn.grammarenglish.app
-
-
+package com.example.learnfrench.app
 annotation class AppScope

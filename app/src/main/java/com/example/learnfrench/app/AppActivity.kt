@@ -1,4 +1,4 @@
-package com.learn.grammarenglish.app
+package com.example.learnfrench.app
 
 import javax.inject.Scope
 

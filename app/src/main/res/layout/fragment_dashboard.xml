@@ -1,6 +1,440 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
-
-</LinearLayout>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@drawable/gradient_start"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="@dimen/_15sdp"
+			android:layout_marginEnd="@dimen/_15sdp"
+			android:layout_marginBottom="@dimen/_15sdp">
+			
+			<TextView
+				android:id="@+id/editTextTextPersonName4"
+				style="@style/text_dashboard_app_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:text="@string/english_grammar_lastname" />
+			
+			
+			<TextView
+				android:id="@+id/tvSubTitle"
+				style="@style/text_dashboard_app_name_subtitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				
+				android:layout_below="@+id/editTextTextPersonName4"
+				android:layout_centerInParent="true"
+				android:layout_marginBottom="@dimen/_26sdp"
+				android:text="@string/learn_grammar_easily" />
+			
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVLearnGrammar"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvSubTitle"
+				app:cardBackgroundColor="#fff2df"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<RelativeLayout
+					android:layout_width="match_parent"
+					
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/img"
+						android:layout_width="@dimen/_40sdp"
+						android:layout_height="@dimen/_40sdp"
+						android:layout_gravity="start"
+						android:layout_marginStart="@dimen/_10sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginEnd="@dimen/_10sdp"
+						android:contentDescription="@string/app_name"
+						android:background="@drawable/circle_grammar" />
+					
+					<ImageView
+						android:id="@+id/ivGrammar"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_18sdp"
+						android:layout_marginEnd="@dimen/_15sdp"
+						android:contentDescription="@string/app_name"
+						android:background="@drawable/blackboard" />
+					
+					
+					<RelativeLayout
+						android:id="@+id/rlGrammar"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/img"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							
+							android:text="GRAMMAR" />
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvEnglishGrammar"
+							android:text="Improve your Grammar Skills"
+							android:textColor="#D50000" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVSentence"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cVLearnGrammar"
+				android:layout_marginTop="@dimen/_10sdp"
+				app:cardBackgroundColor="#E8F5E9"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/img2"
+						android:layout_width="@dimen/_40sdp"
+						android:layout_height="@dimen/_40sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:layout_marginStart="@dimen/_8sdp"
+						android:layout_marginTop="@dimen/_8sdp"
+						android:layout_marginEnd="@dimen/_8sdp"
+						android:layout_marginBottom="@dimen/_8sdp"
+						android:contentDescription="@string/app_name"
+						android:src="@drawable/circle_tenses" />
+					
+					<ImageView
+						android:id="@+id/ivLibraryBooks"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_15sdp"
+						android:layout_marginEnd="@dimen/_15sdp"
+						android:contentDescription="@string/app_name"
+						android:background="@drawable/ic_baseline_library_books_24" />
+					
+					<RelativeLayout
+						android:id="@+id/rlSentence"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/ivLibraryBooks"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar2"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dashboard_sentencestructure"
+							/>
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvEnglishGrammar2"
+							android:text="@string/dashboard_sentencestructure_subheading"
+							android:textColor="#067C00" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVConfusedWord"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cVSentence"
+				android:layout_marginTop="@dimen/_10sdp"
+				
+				app:cardBackgroundColor="#F3E5F5"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/img3"
+						android:layout_width="@dimen/_40sdp"
+						android:layout_height="@dimen/_40sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:layout_marginStart="@dimen/_8sdp"
+						android:layout_marginTop="@dimen/_8sdp"
+						android:layout_marginEnd="@dimen/_8sdp"
+						android:layout_marginBottom="@dimen/_8sdp"
+						android:contentDescription="@string/app_name"
+						android:src="@drawable/circle_confused" />
+					
+					
+					<ImageView
+						android:id="@+id/ivconfusedIcon"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_15sdp"
+						android:layout_marginEnd="@dimen/_10sdp"
+						android:contentDescription="@string/app_name"
+						android:background="@drawable/ic_confused" />
+					
+					<RelativeLayout
+						android:id="@+id/rlConfusedWord"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/img3"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar3"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							
+							android:text="CONFUSED" />
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvEnglishGrammar3"
+							android:text="Commonly Confused Words"
+							android:textColor="#8E24AA" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVWriting"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cVConfusedWord"
+				android:layout_marginTop="@dimen/_10sdp"
+				
+				app:cardBackgroundColor="#E1F5FE"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<!--
+			In the above cardview widget
+			cardelevation property will give elevation to your card view
+			card corner radius will provide radius to your card view
+			card background color will give background color to your card view
+			card max elevation will give the cardview maximum elevation
+			card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+			card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+			below are the two widgets imageview and text view we are displaying inside our card view.
+			-->
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/img4"
+						android:layout_width="@dimen/_40sdp"
+						android:layout_height="@dimen/_40sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:layout_marginStart="@dimen/_8sdp"
+						android:layout_marginTop="@dimen/_8sdp"
+						android:layout_marginEnd="@dimen/_8sdp"
+						android:layout_marginBottom="@dimen/_8sdp"
+						android:contentDescription="@string/app_name"
+						android:src="@drawable/circle_writing" />
+					
+					<ImageView
+						android:id="@+id/ivWritings"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_15sdp"
+						android:layout_marginEnd="@dimen/_15sdp"
+						android:contentDescription="@string/app_name"
+						android:src="@drawable/ic_writing_24dp" />
+					
+					<RelativeLayout
+						android:id="@+id/rlWriting"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/img4"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar4"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							
+							android:text="WRITINGS" />
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvEnglishGrammar4"
+							android:text="Essays,letters and applications"
+							android:textColor="#05487E" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVPunctuation"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cVWriting"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:layout_marginBottom="10dp"
+				app:cardBackgroundColor="#FCE4EC"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<!--
+			In the above cardview widget
+			cardelevation property will give elevation to your card view
+			card corner radius will provide radius to your card view
+			card background color will give background color to your card view
+			card max elevation will give the cardview maximum elevation
+			card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+			card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+			below are the two widgets imageview and text view we are displaying inside our card view.
+			-->
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/img5"
+						android:layout_width="@dimen/_40sdp"
+						android:layout_height="@dimen/_40sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:layout_marginStart="@dimen/_8sdp"
+						android:layout_marginEnd="@dimen/_8sdp"
+						android:background="@drawable/circle_test" />
+					
+					<ImageView
+						android:id="@+id/ivGrammarTest"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_15sdp"
+						android:layout_marginEnd="@dimen/_15sdp"
+						android:contentDescription="@string/app_name"
+						android:background="@drawable/ic_quiz_black_24dp" />
+					
+					<RelativeLayout
+						android:id="@+id/rlPunctuation"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/img5"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar5"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:text="@string/grammar_punctuation" />
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvEnglishGrammar5"
+							android:text="@string/grammar_punctuation_subtitle"
+							android:textColor="#D81B60" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVVocabulary"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cVPunctuation"
+				android:layout_marginBottom="10dp"
+				app:cardBackgroundColor="#F1E5F4"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_65sdp">
+					
+					<ImageView
+						android:id="@+id/imgVocab"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:layout_marginStart="10dp"
+						android:layout_marginEnd="10dp"
+						android:background="@drawable/new_vocab" />
+					
+					<ImageView
+						android:id="@+id/imgVocabIcon"
+						android:layout_width="@dimen/_25sdp"
+						android:layout_height="@dimen/_25sdp"
+						android:layout_centerVertical="true"
+						android:layout_marginStart="@dimen/_15sdp"
+						android:layout_marginEnd="@dimen/_15sdp"
+						android:contentDescription="@string/app_name"
+						android:src="@drawable/ic_baseline_local_library_24" />
+					
+					<RelativeLayout
+						android:id="@+id/rlVocabulary"
+						android:layout_height="wrap_content"
+						android:layout_toEndOf="@+id/imgVocab"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content">
+						
+						<TextView
+							android:id="@+id/tvVocabTitle"
+							style="@style/text_dashboard_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:text="VOCABULARY" />
+						
+						<TextView
+							style="@style/text_dashboard_subject_subtitle"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/tvVocabTitle"
+							android:text="@string/grammar_vocabulary_subtitle"
+							android:textColor="#784BB6" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+		
+		
+		</RelativeLayout>
+	</LinearLayout>
+</androidx.core.widget.NestedScrollView>

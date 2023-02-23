@@ -1,25 +1,60 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.google.firebase.crashlytics'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.example.learnfrench'
-    compileSdk 33
+    signingConfigs {
+        EnglishGrammarReleasekey {
+            storePassword 'Grammar@12953##'
+            keyPassword 'Grammar@12953##'
+            keyAlias 'English Grammar'
+        }
+    }
+    compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.example.learnfrench"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
-
+        applicationId 'com.example.learnfrench'
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 14
+        versionName "1.1.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "en", "ne"
+        // resourceConfigurations.addAll(listOf("en", "np"))
     }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def version =1.1
+            // def version=1.1
+            outputFileName = "English Grammar ${version}.apk"
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+
+    }
+
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+
 
     buildTypes {
         release {
-            minifyEnabled false
+            //   signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -27,12 +62,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
+    testOptions {
+        unitTests.returnDefaultValues = true
     }
 }
 
 dependencies {
+
     //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.google.android.material:material:1.0.0-beta01'
@@ -49,6 +85,23 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // implementation projectDependencies.dagger
+    //noinspection OutdatedLibrary
+    implementation "com.google.dagger:dagger-android:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.daggerVersion"
+    implementation projectDependencies.okHttp
+    implementation projectDependencies.okHttpLogginIntercepter
+    implementation projectDependencies.retrofit
+    implementation projectDependencies.rxJavaAdapter
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+    implementation projectDependencies.cardView
+    implementation projectDependencies.circularImageView
+    implementation projectDependencies.viewpager
+    implementation projectDependencies.dimens
 
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'com.jakewharton.timber:timber:4.7.1'
@@ -79,12 +132,16 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'jp.wasabeef:glide-transformations:4.1.0'
 
-    
+
+    //for db
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-runtime:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
+    androidTestImplementation "androidx.room:room-testing:2.4.3"
+    annotationProcessor "androidx.room:room-compiler:2.4.3"
+
     implementation 'com.chaos.view:pinview:1.4.4'
     implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
-
-    implementation 'com.github.razaghimahdi:Android-Loading-Dots:1.3.0'
-
 
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
     implementation 'com.google.firebase:firebase-messaging-directboot:20.2.4'
@@ -97,16 +154,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.1'
-    implementation 'com.google.android.gms:play-services-ads:21.3.0'
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
 
-//    implementation 'androidx.core:core-ktx:1.7.0'
-//    implementation 'androidx.appcompat:appcompat:1.6.1'
-//    implementation 'com.google.android.material:material:1.8.0'
-//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    testImplementation 'junit:junit:4.13.2'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-//    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
-//    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
 }
+
+//apply plugin: 'com.google.gms.google-services'

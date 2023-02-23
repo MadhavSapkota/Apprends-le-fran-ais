@@ -1,9 +1,9 @@
-package com.learn.grammarenglish.app
+package com.example.learnfrench.app
 import android.app.Application
 import android.content.Context
 import androidx.fragment.app.FragmentActivity
 import androidx.multidex.MultiDex
-import com.learn.grammarenglish.app.AppApplication.body.appcontext
+import com.example.learnfrench.app.AppApplication.body.appcontext
 
 
 class AppApplication : Application() {

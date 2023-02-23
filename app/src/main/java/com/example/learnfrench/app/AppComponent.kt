@@ -1,16 +1,11 @@
-package com.learn.grammarenglish.app
+package com.example.learnfrench.app
 import android.content.Context
-import com.learn.grammarenglish.databasemanager.ApplicationDatabase
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 
 
 @AppScope
-@Component(modules=[AndroidInjectionModule::class, AppModule::class, NetworkModule::class, DatabaseModule::class])
+@Component(modules=[AndroidInjectionModule::class, AppModule::class])
 interface AppComponent {
     fun context(): Context
-    fun webservice(): Webservice
-    fun database(): ApplicationDatabase
-
-
 }

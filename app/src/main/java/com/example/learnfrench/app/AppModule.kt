@@ -1,6 +1,7 @@
-package com.learn.grammarenglish.app
+package com.example.learnfrench.app
 import android.app.Application
 import android.content.Context
+import com.example.learnfrench.app.AppScope
 import dagger.Module
 import dagger.Provides
 

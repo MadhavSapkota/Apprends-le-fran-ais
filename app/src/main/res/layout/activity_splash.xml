@@ -25,31 +25,32 @@
 			android:layout_marginTop="4dp"
 			android:src="@drawable/logo_splash" />
 		
-		<com.razzaghimahdi78.dotsloading.linear.LoadingFady
+		
+		<com.agrawalsuneet.dotsloader.loaders.TashieLoader
 			android:layout_width="230dp"
 			android:layout_height="46dp"
-			app:dots_color="@color/colorSecondary"
-			app:dots_count="5"
+			android:layout_centerVertical="true"
 			android:layout_below="@+id/backgroundImage"
 			android:layout_centerHorizontal="true"
-			app:dots_duration="500"
-			app:dots_size="small" />
+			android:layout_marginTop="@dimen/_15sdp"
+			app:tashieloader_animDelay="200"
+			app:tashieloader_animDur="6000"
+			app:tashieloader_dotsColor="@color/colorSecondary"
+			app:tashieloader_dotsDist="10dp"
+			app:tashieloader_dotsRadius="4dp"
+			app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+			tools:ignore="MissingClass" />
 		
-		
-<!--		<com.agrawalsuneet.dotsloader.loaders.TashieLoader-->
-<!--			android:layout_width="230dp"-->
-<!--			android:layout_height="46dp"-->
-<!--			android:layout_centerVertical="true"-->
-<!--			android:layout_below="@+id/backgroundImage"-->
+<!--		<com.razzaghimahdi78.dotsloading.linear.LoadingFady-->
+<!--			android:layout_width="wrap_content"-->
 <!--			android:layout_centerHorizontal="true"-->
-<!--			android:layout_marginTop="@dimen/_15sdp"-->
-<!--			app:tashieloader_animDelay="200"-->
-<!--			app:tashieloader_animDur="6000"-->
-<!--			app:tashieloader_dotsColor="#215CF3"-->
-<!--			app:tashieloader_dotsDist="10dp"-->
-<!--			app:tashieloader_dotsRadius="4dp"-->
-<!--			app:tashieloader_interpolator="@android:anim/accelerate_interpolator"-->
-<!--			tools:ignore="MissingClass" />-->
+<!--			android:layout_height="31dp"-->
+<!--			android:layout_below="@+id/backgroundImage"-->
+<!--			android:layout_marginTop="14dp"-->
+<!--			app:dots_color="@color/colorSecondary"-->
+<!--			app:dots_count="5"-->
+<!--			app:dots_duration="500"-->
+<!--			app:dots_size="small" />-->
 		
 		<TextView
 			android:id="@+id/editTextTextPersonName3"
@@ -66,6 +67,7 @@
 			android:id="@+id/tvGetStarted"
 			style="@style/text_cursive_get_started"
 			android:layout_width="wrap_content"
+			android:visibility="invisible"
 			android:layout_height="wrap_content"
 			android:layout_alignParentBottom="true"
 			android:layout_centerHorizontal="true"

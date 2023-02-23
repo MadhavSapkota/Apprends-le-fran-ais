@@ -1,4 +1,4 @@
-package com.learn.grammarenglish.app
+package com.example.learnfrench.app
 
 object Apiurl {
     const val BASE_URL = ""

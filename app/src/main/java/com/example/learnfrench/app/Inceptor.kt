@@ -1,5 +1,4 @@
-package com.learn.grammarenglish.app
-import com.learn.grammarenglish.apputlis.UserInfo
+package com.example.learnfrench.app
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.io.IOException
@@ -18,11 +17,11 @@ class Inceptor : Interceptor {
 
 
         when {
-            UserInfo.loginStatus -> {
-                request = request.newBuilder()
-                    .header("Authorization", UserInfo.token)
-                    .build()
-            }
+//            UserInfo.loginStatus -> {
+//                request = request.newBuilder()
+//                    .header("Authorization", UserInfo.token)
+//                    .build()
+//            }
             else -> {
                 request = request.newBuilder()
 
