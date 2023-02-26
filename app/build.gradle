@@ -118,6 +118,7 @@ dependencies {
     //logging interceptor
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.github.mckrpk:AnimatedProgressBar:0.1.0'
 
 
     //Picasso
