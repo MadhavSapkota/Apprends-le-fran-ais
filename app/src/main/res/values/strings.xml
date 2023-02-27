@@ -10,7 +10,11 @@
 	<string name="level_notation">How much French do you know?</string>
 	<string name="level_continue">CONTINUE</string>
 	
-	
+	//start test
+	<string name="test_title">Let\'s test your level</string>
+	<string name="test_subtitle">This short test is a simple and accurate way to make sure you start from the right place</string>
+	<string name="test_submit_btn">START TEST</string>
+	<string name="test_cancel">CANCEL</string>
 	
 	
 	<string name="title_home" tools:ignore="MissingTranslation" />

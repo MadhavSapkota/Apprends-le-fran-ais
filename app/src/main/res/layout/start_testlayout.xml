@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="@dimen/_10sdp"
+		android:layout_marginEnd="@dimen/_10sdp">
+		
+		<RelativeLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<ImageView
+				android:id="@+id/iconForward"
+				android:layout_width="@dimen/_40sdp"
+				android:layout_height="@dimen/_40sdp"
+				android:layout_centerVertical="true"
+				android:layout_gravity="start"
+				android:background="@drawable/ic_back"
+				android:contentDescription="@string/app_name" />
+			
+			
+			<com.mckrpk.animatedprogressbar.AnimatedProgressBar
+				android:id="@+id/animatedProgressBar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@+id/iconForward"
+				app:animationDurationInMs="1600"
+				app:animationStyle="line"
+				app:lineWidth="6dp"
+				app:max="1000"
+				app:progress="750"
+				app:progressColor="@color/colorPrimary"
+				app:progressTipColor="@color/colorPrimary"
+				app:progressTipEnabled="true"
+				app:trackColor="@color/colorGray" />
+		</RelativeLayout>
+		
+		
+		<RelativeLayout
+			android:id="@+id/belowToolbar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/toolbar"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="@dimen/_5sdp">
+			
+			<ImageView
+				android:id="@+id/ivImage"
+				android:layout_width="@dimen/_100sdp"
+				android:layout_height="@dimen/_100sdp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/icon_french"
+				android:contentDescription="@string/app_name" />
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/ivImage"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="@dimen/_95sdp">
+				
+				<TextView
+					android:id="@+id/tvEnglishGrammar"
+					style="@style/test_Title"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_20sdp"
+					android:gravity="center_horizontal"
+					android:text="@string/test_title" />
+				
+				
+				<TextView
+					android:id="@+id/tvEnglishGrammar3"
+					style="@style/test_subtitle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tvEnglishGrammar"
+					android:layout_marginTop="@dimen/_15sdp"
+					android:gravity="center_horizontal"
+					android:text="@string/test_subtitle" />
+			</RelativeLayout>
+		</RelativeLayout>
+		
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cVSubmit"
+			android:layout_width="@dimen/_400sdp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/belowToolbar"
+			android:layout_marginTop="@dimen/_40sdp"
+			android:layout_marginBottom="@dimen/_8sdp"
+			app:cardBackgroundColor="@color/colorPrimary"
+			app:cardCornerRadius="@dimen/_10sdp">
+			
+			<RelativeLayout
+				android:id="@+id/rlSubmit"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/_40sdp">
+				
+				<RelativeLayout
+					android:id="@+id/rlPunctuation"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true">
+					
+					
+					<TextView
+						android:id="@+id/tvEnglishGrammar5"
+						style="@style/text_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:text="@string/test_submit_btn" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</androidx.cardview.widget.CardView>
+		
+		<RelativeLayout
+			android:id="@+id/textCancel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/cVSubmit"
+			android:layout_marginTop="@dimen/_5sdp">
+			
+			<TextView
+				android:id="@+id/tvCancel"
+				style="@style/text_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="@string/test_cancel" />
+		</RelativeLayout>
+	</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

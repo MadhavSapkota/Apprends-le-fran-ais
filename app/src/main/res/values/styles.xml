@@ -117,6 +117,24 @@
         <item name="android:fontFamily">@font/archivonarrow_medium</item>
         <item name="android:textColor">#FBF9F9</item>
     </style>
+    <style name="text_cancel">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="test_Title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="test_subtitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_semibold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    
+    
     
     
     

@@ -343,10 +343,7 @@
 			-->
 				<RelativeLayout
 					android:layout_width="wrap_content"
-					android:layout_height="@dimen/_45sdp">
-					
-					
-					
+					android:layout_height="@dimen/_40sdp">
 					
 					<RelativeLayout
 						android:id="@+id/rlPunctuation"
