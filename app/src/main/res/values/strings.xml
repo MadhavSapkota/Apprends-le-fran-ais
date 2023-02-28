@@ -16,6 +16,12 @@
 	<string name="test_submit_btn">START TEST</string>
 	<string name="test_cancel">CANCEL</string>
 	
+	//quiz test
+	<string name="quiz_diamond">1</string>
+	<string name="quiz_love">4</string>
+	<string name="quiz_skip">SKIP</string>
+	<string name="quiz_check">CHECK</string>
+	
 	
 	<string name="title_home" tools:ignore="MissingTranslation" />
 	<string name="title_dashboard" tools:ignore="MissingTranslation" />

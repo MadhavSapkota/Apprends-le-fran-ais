@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="@dimen/_10sdp"
+		android:layout_marginEnd="@dimen/_10sdp">
+		
+		<RelativeLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_marginTop="@dimen/_4sdp"
+			android:layout_height="match_parent">
+			
+			<ImageView
+				android:id="@+id/iconForward"
+				android:layout_width="@dimen/_25sdp"
+				android:layout_height="@dimen/_25sdp"
+				android:layout_centerVertical="true"
+				android:layout_gravity="start"
+				android:background="@drawable/ic_baseline_clear_24"
+				android:contentDescription="@string/app_name" />
+			
+			
+			<com.mckrpk.animatedprogressbar.AnimatedProgressBar
+				android:id="@+id/animatedProgressBar"
+				android:layout_width="@dimen/_150sdp"
+				android:layout_marginStart="@dimen/_6sdp"
+				android:layout_height="wrap_content"
+				android:layout_toEndOf="@+id/iconForward"
+				app:animationDurationInMs="1600"
+				app:animationStyle="line"
+				app:lineWidth="6dp"
+				app:max="1000"
+				app:progress="750"
+				app:progressColor="@color/colorPrimary"
+				app:progressTipColor="@color/colorPrimary"
+				app:progressTipEnabled="true"
+				app:trackColor="@color/colorGray" />
+			
+			<ImageView
+				android:id="@+id/ivStroke"
+				android:layout_width="@dimen/_25sdp"
+				android:layout_height="@dimen/_25sdp"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_toEndOf="@+id/animatedProgressBar"
+				android:layout_centerVertical="true"
+				android:background="@drawable/ic_baseline_diamond_24"
+				android:contentDescription="@string/app_name" />
+			
+			<TextView
+				android:id="@+id/tvDiamondText"
+				style="@style/test_quiz"
+				android:layout_toEndOf="@+id/ivStroke"
+				android:layout_marginStart="@dimen/_3sdp"
+				android:layout_width="wrap_content"
+				android:textColor="@color/primary_yellow"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/quiz_diamond" />
+			
+			
+			<ImageView
+				android:id="@+id/ivLove"
+				android:layout_width="@dimen/_25sdp"
+				android:layout_height="@dimen/_25sdp"
+				android:layout_marginStart="@dimen/_20sdp"
+				android:layout_toEndOf="@+id/ivStroke"
+				android:layout_centerVertical="true"
+				android:layout_gravity="start"
+				android:background="@drawable/ic_baseline_favorite_24"
+				android:contentDescription="@string/app_name" />
+			
+			<TextView
+				android:id="@+id/tvLoveText"
+				android:layout_toEndOf="@+id/ivLove"
+				style="@style/test_quiz"
+				android:textColor="@color/lightcolorOrange"
+				android:layout_marginStart="@dimen/_3sdp"
+				android:layout_width="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/quiz_love" />
+		
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:id="@+id/rlRecyclerView"
+			android:layout_marginTop="@dimen/_30sdp"
+			android:layout_below="@+id/toolbar"
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recycler_view"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal" />
+		
+		
+		</RelativeLayout>
+		
+		
+		<RelativeLayout
+			android:layout_alignParentBottom="true"
+			android:id="@+id/rlSkip"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@+id/rlRecyclerView"
+			android:orientation="horizontal">
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVSubmit"
+				android:layout_width="@dimen/_90sdp"
+				android:layout_height="@dimen/_30sdp"
+				android:layout_marginTop="@dimen/_40sdp"
+				android:layout_marginBottom="@dimen/_8sdp"
+				
+				app:cardBackgroundColor="@color/background"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<!--			<RelativeLayout-->
+				<!--				android:id="@+id/rlSubmit"-->
+				<!--				android:layout_width="wrap_content"-->
+				<!--				android:layout_height="@dimen/_40sdp">-->
+				
+				<RelativeLayout
+					android:id="@+id/rlPunctuation"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true">
+					
+					<TextView
+						android:id="@+id/tvEnglishGrammar5"
+						style="@style/text_button"
+						android:textColor="@color/colorPrimary"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:text="@string/quiz_skip" />
+					<!--				</RelativeLayout>-->
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVCancel"
+				android:layout_width="@dimen/_150sdp"
+				android:layout_alignParentEnd="true"
+				android:layout_marginEnd="@dimen/_10sdp"
+				android:layout_height="@dimen/_30sdp"
+				android:layout_marginTop="@dimen/_40sdp"
+				android:layout_marginBottom="@dimen/_8sdp"
+				app:cardBackgroundColor="@color/colorPrimary"
+				app:cardCornerRadius="@dimen/_10sdp">
+				<RelativeLayout
+					android:id="@+id/textCancel"
+					android:layout_width="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/cVSubmit"
+					android:layout_marginTop="@dimen/_5sdp">
+					<TextView
+						android:id="@+id/tvCancel"
+						style="@style/text_button"
+						
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true"
+						android:text="@string/quiz_check" />
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+		</RelativeLayout>
+	</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
