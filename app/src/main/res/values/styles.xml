@@ -111,6 +111,18 @@
         <item name="android:fontFamily">@font/archivonarrow_medium</item>
         <item name="android:textColor">@color/blackColor</item>
     </style>
+    <style name="style_gem_title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_bold</item>
+        <item name="android:textColor">@color/blackColor</item>
+    </style>
+    
+    <style name="style_gem_subtitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_regular</item>
+        <item name="android:textColor">@color/blackColor</item>
+    </style>
+    
     
     <style name="text_button">
         <item name="android:textSize">18sp</item>

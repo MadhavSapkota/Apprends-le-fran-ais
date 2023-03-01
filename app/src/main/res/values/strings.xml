@@ -22,6 +22,25 @@
 	<string name="quiz_skip">SKIP</string>
 	<string name="quiz_check">CHECK</string>
 	
+	//gem added
+	<string name="gem_number">512</string>
+	<string name="gem_title">You earned 12 gems !</string>
+	<string name="gem_subtitle">Don\'t spend them all in one place</string>
+	
+	//quiz success
+	<string name="quiz_success">Congratulations !</string>
+	
+	//quiz failure
+	<string name="quiz_failure">Wrong Answer</string>
+	<string name="quiz_message">Je suis un garcon.</string>
+	<string name="quiz_operation">GOT IT</string>
+	<string name="quiz_operation_message">You have win 1 diamond</string>
+	
+	
+	
+	
+	
+	
 	
 	<string name="title_home" tools:ignore="MissingTranslation" />
 	<string name="title_dashboard" tools:ignore="MissingTranslation" />

@@ -9,6 +9,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_marginStart="@dimen/_10sdp"
+		android:layout_marginTop="@dimen/_10sdp"
 		android:layout_marginEnd="@dimen/_10sdp">
 		
 		<RelativeLayout
@@ -59,7 +60,7 @@
 				android:layout_toEndOf="@+id/ivStroke"
 				android:layout_marginStart="@dimen/_3sdp"
 				android:layout_width="wrap_content"
-				android:textColor="@color/primary_yellow"
+				android:textColor="@color/lightcolorOrange"
 				android:layout_centerVertical="true"
 				android:layout_height="wrap_content"
 				android:gravity="center_horizontal"
@@ -172,7 +173,6 @@
 					<TextView
 						android:id="@+id/tvCancel"
 						style="@style/text_button"
-						
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:gravity="center_horizontal"

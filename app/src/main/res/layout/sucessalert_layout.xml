@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root_layout"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_height="wrap_content"
+	android:background="#FFF4D7"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_margin="@dimen/_10sdp"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout
+			android:id="@+id/toolbar"
+			android:layout_alignParentEnd="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+				android:id="@+id/tvTitle"
+				android:layout_width="wrap_content"
+				style="@style/style_gem_title"
+				android:layout_alignParentLeft="true"
+				android:layout_height="wrap_content"
+				android:text="@string/quiz_success" />
+			
+			<TextView
+				android:id="@+id/tvSubTitle"
+				android:layout_width="wrap_content"
+				style="@style/style_gem_subtitle"
+				android:layout_marginTop="@dimen/_8sdp"
+				android:layout_below="@+id/tvTitle"
+				android:layout_height="wrap_content"
+				android:text="@string/quiz_operation_message" />
+			
+			
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_centerHorizontal="true"
+				android:layout_width="wrap_content">
+			
+			<ImageView
+				android:id="@+id/ivStroke"
+				android:layout_width="@dimen/_25sdp"
+				android:layout_height="@dimen/_25sdp"
+				
+				android:background="@drawable/ic_baseline_diamond_24"
+				android:contentDescription="@string/app_name" />
+			
+			<TextView
+				android:id="@+id/tvDiamondText"
+				style="@style/test_quiz"
+				android:layout_toEndOf="@+id/ivStroke"
+				android:layout_marginStart="@dimen/_3sdp"
+				android:layout_width="wrap_content"
+				android:textColor="@color/colorPrimary"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/gem_number" />
+			</RelativeLayout>
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:id="@+id/rlSkip"
+			android:layout_below="@+id/toolbar"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVPunctuation"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_40sdp"
+				android:layout_marginBottom="10dp"
+				app:cardBackgroundColor="@color/colorPrimary"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_40sdp">
+					
+					<RelativeLayout
+						android:id="@+id/rlSubmit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_centerHorizontal="true">
+						
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar5"
+							style="@style/text_button"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:text="@string/level_continue" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+		</RelativeLayout>
+		
+		
+	</RelativeLayout>
+</RelativeLayout>
