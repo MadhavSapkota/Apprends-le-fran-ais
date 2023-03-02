@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root_layout"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_height="wrap_content"
+	android:background="#FFF4D7"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/_20sdp">
+		
+		<RelativeLayout
+			android:id="@+id/rlLoveIcon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true">
+			
+			<ImageView
+				android:id="@+id/ivLove1"
+				android:layout_width="@dimen/_90sdp"
+				android:layout_height="@dimen/_90sdp"
+				android:layout_marginEnd="@dimen/_5sdp"
+				android:background="@drawable/ic_baseline_favorite_24"
+				android:contentDescription="@string/app_name" />
+		
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/rlLoveIcon"
+			android:layout_alignParentEnd="true"
+			android:layout_marginTop="@dimen/_20sdp">
+			
+			<TextView
+				android:id="@+id/tvTitle"
+				style="@style/style_gem_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:text="@string/refill_heartTitle" />
+			
+			<TextView
+				android:id="@+id/tvSubTitle"
+				style="@style/style_gem_subtitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvTitle"
+				android:layout_marginStart="@dimen/_10sdp"
+				android:layout_marginTop="@dimen/_8sdp"
+				android:gravity="center_horizontal"
+				android:text="@string/refill_heartSubTitle" />
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:id="@+id/rlSkip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/toolbar">
+			
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cVPunctuation"
+				android:layout_width="@dimen/_400sdp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_40sdp"
+				android:layout_marginBottom="10dp"
+				app:cardBackgroundColor="@color/colorPrimary"
+				app:cardCornerRadius="@dimen/_10sdp">
+				
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/_40sdp">
+					
+					<RelativeLayout
+						android:id="@+id/rlSubmit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true">
+						
+						
+						<TextView
+							android:id="@+id/tvEnglishGrammar5"
+							style="@style/text_button"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:text="@string/refill_continue" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</androidx.cardview.widget.CardView>
+		</RelativeLayout>
+	
+	
+	</RelativeLayout>
+</RelativeLayout>

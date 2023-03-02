@@ -35,8 +35,20 @@
 	<string name="quiz_message">Je suis un garcon.</string>
 	<string name="quiz_operation">GOT IT</string>
 	<string name="quiz_operation_message">You have win 1 diamond</string>
+	<string name="quiz_error_message">You have lost 1 diamond</string>
 	
+	//mistake cost for wrong answer
+	<string name="mistake_title">Each mistake costs 1 heart.</string>
+	<string name="mistake_subtitle">Stay sharp and focused to keep your hearts.You got this.</string>
+	<string name="mistake_operation">KEEP GOING</string>
 	
+	//Out of hearts
+	<string name="refill_heartTitle">You ran out of heart.</string>
+	<string name="refill_heartSubTitle">But you\'re still new here, so here\'s a free refill.</string>
+	<string name="refill_continue">REFILL FOR FREE</string>
+	
+	//Lesson Complete
+	<string name="lesson_complete_title">Lesson Completed</string>
 	
 	
 	

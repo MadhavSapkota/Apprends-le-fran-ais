@@ -35,7 +35,7 @@
 				android:layout_marginTop="@dimen/_1sdp"
 				android:layout_below="@+id/tvTitle"
 				android:layout_height="wrap_content"
-				android:text="@string/quiz_operation_message" />
+				android:text="@string/quiz_error_message" />
 			
 			<TextView
 				android:id="@+id/tvSubTitle"
