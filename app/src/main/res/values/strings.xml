@@ -49,7 +49,12 @@
 	
 	//Lesson Complete
 	<string name="lesson_complete_title">Lesson Completed</string>
-	
+	<string name="lesson_complete_totalXP">TOTAL XP</string>
+	<string name="lesson_complete_totalXPNumber">18</string>
+	<string name="lesson_complete_speedyNumber">32.29</string>
+	<string name="lesson_complete_speedy">SPEEDY</string>
+	<string name="lesson_complete_result">GOOD</string>
+	<string name="lesson_complete_resultRemark">80%</string>
 	
 	
 	

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+		android:id="@+id/navigation_share"
+		android:icon="@drawable/ic_baseline_share_24"
+		android:title="Invite Friends" />
+	
+	<item
+		android:id="@+id/navigation_rating"
+		android:icon="@drawable/ic_baseline_rating"
+		android:title="Rate" />
+	
+	<item
+		android:id="@+id/navigation_updates"
+		android:icon="@drawable/ic_baseline_sync"
+		android:title="Updates" />
+	
+	<item
+		android:id="@+id/navigation_contacts"
+		android:icon="@drawable/ic_outline_contacts"
+		android:title="Contact Us" />
+
+</menu>

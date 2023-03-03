@@ -101,16 +101,19 @@
     
     
     
-<!--    <style name="text_dashboard_title">-->
-<!--        <item name="android:textSize">18sp</item>-->
-<!--        <item name="android:fontFamily">@font/archivonarrow_regular</item>-->
-<!--    </style>-->
-    
     <style name="text_dashboard_title">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/archivonarrow_regular</item>
-        <item name="android:textColor">@color/blackColor</item>
     </style>
+    
+    <style name="style_gem_marks">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/archivonarrow_regular</item>
+        <item name="android:textColor">@color/bottom_navigation_item_color</item>
+    </style>
+    
+    
+    
     <style name="style_gem_title">
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">@font/archivonarrow_bold</item>

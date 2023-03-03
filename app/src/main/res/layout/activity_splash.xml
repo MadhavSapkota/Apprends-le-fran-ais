@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:id="@+id/root_layout"
-	android:layout_width="match_parent"
-	android:orientation="vertical"
-	android:layout_height="match_parent"
-	android:background="@color/colorPrimary">
-	
-	
-	<RelativeLayout
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/root_layout"
 		android:layout_width="match_parent"
+		android:orientation="vertical"
 		android:layout_height="match_parent"
-		android:layout_margin="@dimen/_20sdp">
+		android:background="@color/colorPrimary">
 		
 		
-		<ImageView
-			android:id="@+id/backgroundImage"
-			android:layout_width="350dp"
-			android:layout_height="285dp"
-			android:layout_alignParentTop="true"
-			android:layout_centerInParent="true"
-			android:layout_gravity="center"
-			android:layout_marginTop="4dp"
-			android:src="@drawable/logo_splash" />
-		
-		
-		<com.agrawalsuneet.dotsloader.loaders.TashieLoader
-			android:layout_width="230dp"
-			android:layout_height="46dp"
-			android:layout_centerVertical="true"
-			android:layout_below="@+id/backgroundImage"
-			android:layout_centerHorizontal="true"
-			android:layout_marginTop="@dimen/_15sdp"
-			app:tashieloader_animDelay="200"
-			app:tashieloader_animDur="6000"
-			app:tashieloader_dotsColor="@color/colorSecondary"
-			app:tashieloader_dotsDist="10dp"
-			app:tashieloader_dotsRadius="4dp"
-			app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
-			tools:ignore="MissingClass" />
-		
-<!--		<com.razzaghimahdi78.dotsloading.linear.LoadingFady-->
-<!--			android:layout_width="wrap_content"-->
-<!--			android:layout_centerHorizontal="true"-->
-<!--			android:layout_height="31dp"-->
-<!--			android:layout_below="@+id/backgroundImage"-->
-<!--			android:layout_marginTop="14dp"-->
-<!--			app:dots_color="@color/colorSecondary"-->
-<!--			app:dots_count="5"-->
-<!--			app:dots_duration="500"-->
-<!--			app:dots_size="small" />-->
-		
-		<TextView
-			android:id="@+id/editTextTextPersonName3"
-			style="@style/text_bold_english_grammar"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_above="@+id/tvGetStarted"
-			android:layout_centerHorizontal="true"
-			android:layout_marginBottom="@dimen/_6sdp"
-			android:text="Apprends Le Français" />
-		
-		
-		<TextView
-			android:id="@+id/tvGetStarted"
-			style="@style/text_cursive_get_started"
-			android:layout_width="wrap_content"
-			android:visibility="invisible"
-			android:layout_height="wrap_content"
-			android:layout_alignParentBottom="true"
-			android:layout_centerHorizontal="true"
-			android:gravity="center_horizontal"
-			android:text="Get Started" />
-	</RelativeLayout>
-</LinearLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="@dimen/_20sdp">
+			
+			
+			<ImageView
+				android:id="@+id/backgroundImage"
+				android:layout_width="350dp"
+				android:layout_height="285dp"
+				android:layout_alignParentTop="true"
+				android:layout_centerInParent="true"
+				android:layout_gravity="center"
+				android:layout_marginTop="4dp"
+				android:src="@drawable/logo_splash" />
+			
+			
+			<com.agrawalsuneet.dotsloader.loaders.TashieLoader
+				android:layout_width="230dp"
+				android:layout_height="46dp"
+				android:layout_centerVertical="true"
+				android:layout_below="@+id/backgroundImage"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="@dimen/_15sdp"
+				app:tashieloader_animDelay="200"
+				app:tashieloader_animDur="6000"
+				app:tashieloader_dotsColor="@color/colorSecondary"
+				app:tashieloader_dotsDist="10dp"
+				app:tashieloader_dotsRadius="4dp"
+				app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+				tools:ignore="MissingClass" />
+			
+	<!--		<com.razzaghimahdi78.dotsloading.linear.LoadingFady-->
+	<!--			android:layout_width="wrap_content"-->
+	<!--			android:layout_centerHorizontal="true"-->
+	<!--			android:layout_height="31dp"-->
+	<!--			android:layout_below="@+id/backgroundImage"-->
+	<!--			android:layout_marginTop="14dp"-->
+	<!--			app:dots_color="@color/colorSecondary"-->
+	<!--			app:dots_count="5"-->
+	<!--			app:dots_duration="500"-->
+	<!--			app:dots_size="small" />-->
+			
+			<TextView
+				android:id="@+id/editTextTextPersonName3"
+				style="@style/text_bold_english_grammar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@+id/tvGetStarted"
+				android:layout_centerHorizontal="true"
+				android:layout_marginBottom="@dimen/_6sdp"
+				android:text="Apprends Le Français" />
+			
+			
+			<TextView
+				android:id="@+id/tvGetStarted"
+				style="@style/text_cursive_get_started"
+				android:layout_width="wrap_content"
+				android:visibility="invisible"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:gravity="center_horizontal"
+				android:text="Get Started" />
+		</RelativeLayout>
+	</LinearLayout>

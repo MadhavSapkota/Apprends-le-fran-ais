@@ -32,6 +32,15 @@
 				android:textSize="@dimen/_20sdp"
 				android:layout_centerHorizontal="true"
 				android:text="@string/lesson_complete_title" />
+			
+			<ImageView
+				android:id="@+id/iVAwesome"
+				android:layout_width="@dimen/_30sdp"
+				android:layout_height="@dimen/_30sdp"
+				android:layout_marginEnd="@dimen/_5sdp"
+				android:background="@drawable/ic_baseline_auto_awesome_24"
+				android:contentDescription="@string/app_name" />
+			
 		</RelativeLayout>
 		
 		<RelativeLayout
@@ -62,12 +71,13 @@
 			
 		</RelativeLayout>
 		
+		<!--Indicator Start-->
 		<androidx.cardview.widget.CardView
-			android:id="@+id/cVLearnGrammar"
+			android:id="@+id/cVTotalXP"
 			android:layout_below="@+id/rlLoveIcon"
-			android:layout_width="@dimen/_70sdp"
+			android:layout_width="@dimen/_80sdp"
 			android:layout_height="@dimen/_90sdp"
-			app:cardBackgroundColor="#fff2df"
+			app:cardBackgroundColor="#F4790C"
 			android:layout_marginBottom="@dimen/_5sdp"
 			app:cardCornerRadius="@dimen/_10sdp">
 			
@@ -75,16 +85,21 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content">
 				
-				<ImageView
-					android:id="@+id/img"
-					android:layout_width="@dimen/_40sdp"
-					android:layout_height="@dimen/_40sdp"
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_10sdp"
+					android:layout_width="match_parent">
+				
+				<TextView
+					android:id="@+id/tvEnglishGrammar1"
+					style="@style/style_gem_marks"
+					android:layout_width="wrap_content"
+					android:layout_centerHorizontal="true"
 					android:layout_centerVertical="true"
-					android:layout_gravity="start"
-					android:layout_marginStart="@dimen/_10sdp"
-					android:layout_marginEnd="@dimen/_10sdp"
-					android:background="@drawable/circle_grammar"
-					android:contentDescription="@string/app_name" />
+					android:layout_height="wrap_content"
+					android:text="@string/lesson_complete_totalXP" />
+				</RelativeLayout>
+				
 				
 				<ImageView
 					android:id="@+id/ivGrammar"
@@ -96,26 +111,197 @@
 					android:background="@drawable/ic_baseline_assessment_24"
 					android:contentDescription="@string/app_name" />
 				
-				
 				<RelativeLayout
 					android:id="@+id/rlGrammar"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_centerVertical="true"
+					android:layout_width="@dimen/_80sdp"
+					android:layout_height="@dimen/_90sdp"
 					android:layout_below="@+id/ivGrammar"
-					>
+					android:layout_marginStart="@dimen/_3sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:layout_marginEnd="@dimen/_3sdp"
+					android:layout_marginBottom="@dimen/_3sdp"
+					android:background="@drawable/lessoncomplete_background">
+					
+					<ImageView
+						android:id="@+id/img"
+						android:layout_width="@dimen/_30sdp"
+						android:layout_height="@dimen/_30sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:background="@drawable/ic_baseline_stroke"
+						android:contentDescription="@string/app_name" />
+					
 					
 					<TextView
 						android:id="@+id/tvEnglishGrammar"
 						style="@style/text_dashboard_title"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="@string/level_zero" />
+						android:layout_centerHorizontal="true"
+						android:layout_marginStart="@dimen/_1sdp"
+						android:textColor="#F4790C"
+						android:layout_centerVertical="true"
+						android:layout_toEndOf="@+id/img"
+						android:text="@string/lesson_complete_totalXPNumber" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</androidx.cardview.widget.CardView>
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cVSpeedy"
+			android:layout_below="@+id/rlLoveIcon"
+			android:layout_toEndOf="@+id/cVTotalXP"
+			android:layout_marginStart="@dimen/_20sdp"
+			android:layout_width="@dimen/_80sdp"
+			android:layout_height="@dimen/_90sdp"
+			app:cardBackgroundColor="#2090FF"
+			android:layout_marginBottom="@dimen/_5sdp"
+			app:cardCornerRadius="@dimen/_10sdp">
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_10sdp"
+					android:layout_width="match_parent">
+					
+					<TextView
+						android:id="@+id/tvSpeedyText"
+						style="@style/style_gem_marks"
+						android:layout_width="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true"
+						android:layout_height="wrap_content"
+						android:text="@string/lesson_complete_speedy" />
+				</RelativeLayout>
+				
+				
+				<ImageView
+					android:id="@+id/ivSpeedyIcon"
+					android:layout_width="@dimen/_25sdp"
+					android:layout_height="@dimen/_25sdp"
+					android:layout_centerVertical="true"
+					android:layout_marginStart="@dimen/_18sdp"
+					android:layout_marginEnd="@dimen/_15sdp"
+					android:background="@drawable/ic_baseline_assessment_24"
+					android:contentDescription="@string/app_name" />
+				
+				<RelativeLayout
+					android:id="@+id/rlSpeedyUnit"
+					android:layout_width="@dimen/_80sdp"
+					android:layout_height="@dimen/_90sdp"
+					android:layout_below="@+id/ivSpeedyIcon"
+					android:layout_marginStart="@dimen/_3sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:layout_marginEnd="@dimen/_3sdp"
+					android:layout_marginBottom="@dimen/_3sdp"
+					android:background="@drawable/lessoncomplete_background">
+					
+					<ImageView
+						android:id="@+id/ivSpeedyUnitIcon"
+						android:layout_width="@dimen/_30sdp"
+						android:layout_height="@dimen/_30sdp"
+						android:layout_centerVertical="true"
+						android:layout_gravity="start"
+						android:background="@drawable/ic_baseline_timer_24"
+						android:contentDescription="@string/app_name" />
+					
+					
+					<TextView
+						android:id="@+id/tVSpeedyNumber"
+						style="@style/text_dashboard_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_5sdp"
+						android:layout_centerHorizontal="true"
+						android:textColor="#3F4CC8"
+						android:layout_centerVertical="true"
+						android:layout_toEndOf="@+id/ivSpeedyUnitIcon"
+						android:text="@string/lesson_complete_speedyNumber" />
 				
 				</RelativeLayout>
 			</RelativeLayout>
 		</androidx.cardview.widget.CardView>
 		
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cVPerformance"
+			android:layout_below="@+id/rlLoveIcon"
+			android:layout_toEndOf="@+id/cVSpeedy"
+			android:layout_marginStart="@dimen/_20sdp"
+			android:layout_width="@dimen/_80sdp"
+			android:layout_height="@dimen/_90sdp"
+			app:cardBackgroundColor="#DA09BE"
+			android:layout_marginBottom="@dimen/_5sdp"
+			app:cardCornerRadius="@dimen/_10sdp">
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_10sdp"
+					android:layout_width="match_parent">
+					
+					<TextView
+						android:id="@+id/tvPerformanceText"
+						style="@style/style_gem_marks"
+						android:layout_width="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true"
+						android:layout_height="wrap_content"
+						android:text="@string/lesson_complete_result" />
+				</RelativeLayout>
+				
+				
+				<ImageView
+					android:id="@+id/iVPerformanceIcon"
+					android:layout_width="@dimen/_25sdp"
+					android:layout_height="@dimen/_25sdp"
+					android:layout_centerVertical="true"
+					android:layout_marginStart="@dimen/_18sdp"
+					android:layout_marginEnd="@dimen/_15sdp"
+					android:background="@drawable/ic_baseline_assessment_24"
+					android:contentDescription="@string/app_name" />
+				
+				<RelativeLayout
+					android:id="@+id/rlPerformanceUnit"
+					android:layout_width="@dimen/_80sdp"
+					android:layout_height="@dimen/_90sdp"
+					android:layout_below="@+id/iVPerformanceIcon"
+					android:layout_marginStart="@dimen/_3sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:layout_marginEnd="@dimen/_3sdp"
+					android:layout_marginBottom="@dimen/_3sdp"
+					android:background="@drawable/lessoncomplete_background">
+					
+					<ImageView
+						android:id="@+id/ivPerformanceUnitIcon"
+						android:layout_width="@dimen/_30sdp"
+						android:layout_height="@dimen/_30sdp"
+						android:layout_centerVertical="true"
+						android:background="@drawable/ic_baseline_performance"
+						android:contentDescription="@string/app_name" />
+					
+					
+					<TextView
+						android:id="@+id/tVPerformanceNumber"
+						style="@style/text_dashboard_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_5sdp"
+						android:layout_centerHorizontal="true"
+						android:textColor="#DA09BE"
+						android:layout_centerVertical="true"
+						android:layout_toEndOf="@+id/ivPerformanceUnitIcon"
+						android:text="@string/lesson_complete_resultRemark" />
+				
+				</RelativeLayout>
+			</RelativeLayout>
+		</androidx.cardview.widget.CardView>
+		
+		<!--Indicators end-->
 		
 		
 		
@@ -123,14 +309,14 @@
 			android:id="@+id/rlSkip"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_below="@+id/rlLoveIcon">
+			android:layout_alignParentBottom="true">
 			
 			<androidx.cardview.widget.CardView
 				android:id="@+id/cVPunctuation"
 				android:layout_width="@dimen/_400sdp"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/_40sdp"
-				android:layout_alignParentBottom="true"
+			
 				android:layout_marginBottom="10dp"
 				app:cardBackgroundColor="@color/colorPrimary"
 				app:cardCornerRadius="@dimen/_10sdp">
@@ -158,7 +344,5 @@
 				</RelativeLayout>
 			</androidx.cardview.widget.CardView>
 		</RelativeLayout>
-	
-	
 	</RelativeLayout>
 </RelativeLayout>
