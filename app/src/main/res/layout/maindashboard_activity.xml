@@ -1,25 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:id="@+id/dashboard"
+	android:id="@+id/container"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	
-	
-	<FrameLayout
-		android:id="@+id/fragment_container_view_dashboard"
+	<RelativeLayout
+		android:id="@+id/dashboard"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:layout_above="@+id/bottom_navigation" />
+		android:layout_height="match_parent">
+		
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorToolBar"
+			android:fitsSystemWindows="true"
+			android:minHeight="?attr/actionBarSize"
+			app:theme="@style/AppTheme">
+			
+			<RelativeLayout
+				android:id="@+id/rLToolbar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/_10sdp"
+				android:gravity="center_vertical">
+				
+				<ImageView
+					android:id="@+id/iVLanguage"
+					android:layout_width="@dimen/_40sdp"
+					android:layout_height="@dimen/_20sdp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/fr"
+					android:visibility="visible" />
+				
+				<RelativeLayout
+					android:id="@+id/rlChallenge"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toEndOf="@+id/iVLanguage"
+					android:layout_marginStart="@dimen/_30sdp"
+					android:layout_marginTop="@dimen/_10sdp"
+					android:layout_marginEnd="@dimen/_10sdp"
+					android:layout_marginBottom="@dimen/_10sdp"
+					android:layout_centerVertical="true"
+					>
+					
+					<ImageView
+						android:id="@+id/iVChallenge"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:src="@drawable/ic_baseline_local_fire"
+						android:visibility="visible" />
+					
+					<TextView
+						android:id="@+id/tvEnglishGrammar"
+						style="@style/style_gem_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_5sdp"
+						android:layout_marginEnd="@dimen/_23sdp"
+						android:layout_toEndOf="@+id/iVChallenge"
+						android:text="@string/dashboard_challenge" />
+				
+				</RelativeLayout>
+				
+				<RelativeLayout
+					android:id="@+id/rLDiamond"
+					android:layout_width="wrap_content"
+					android:layout_toEndOf="@+id/rlChallenge"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/_30sdp"
+					android:layout_centerVertical="true"
+					android:layout_marginTop="@dimen/_10sdp"
+					android:layout_marginBottom="@dimen/_10sdp">
+					
+					<ImageView
+						android:id="@+id/iVDiamond"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:src="@drawable/ic_baseline_diamond_24"
+						android:visibility="visible" />
+					
+					<TextView
+						android:id="@+id/tVDiamond"
+						style="@style/style_gem_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_10sdp"
+						android:layout_toEndOf="@+id/iVDiamond"
+						android:text="@string/dashboard_diamond" />
+				</RelativeLayout>
+				
+				<RelativeLayout
+					android:id="@+id/rLLove"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_margin="@dimen/_10sdp"
+					android:layout_centerVertical="true">
+					
+					<ImageView
+						android:id="@+id/iVLove"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:src="@drawable/ic_baseline_favorite_24"
+						android:visibility="visible" />
+					
+					<TextView
+						android:id="@+id/tVLove"
+						style="@style/style_gem_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_10sdp"
+						android:layout_toEndOf="@+id/iVLove"
+						android:text="@string/dashboard_challenge" />
+				</RelativeLayout>
+			
+			
+			
+			</RelativeLayout>
+		
+		</androidx.appcompat.widget.Toolbar>
+		
+		
+		<FrameLayout
+			android:id="@+id/fragment_container_view_dashboard"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/bottom_navigation" />
+		
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/bottom_navigation"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/lessoncomplete_background"
+			app:itemIconTint="@drawable/bottom_navigationselector_color"
+			app:menu="@menu/bottom_nav_menu" />
 	
-	<com.google.android.material.bottomnavigation.BottomNavigationView
-		android:id="@+id/bottom_navigation"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:background="@drawable/lessoncomplete_background"
-		app:itemIconTint="@drawable/bottom_navigationselector_color"
-		app:menu="@menu/bottom_nav_menu" />
+	</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</RelativeLayout>

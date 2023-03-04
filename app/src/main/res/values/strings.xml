@@ -56,6 +56,11 @@
 	<string name="lesson_complete_result">GOOD</string>
 	<string name="lesson_complete_resultRemark">80%</string>
 	
+	//Lesson Complete
+	<string name="dashboard_challenge">1</string>
+	<string name="dashboard_diamond">510</string>
+	
+	
 	
 	
 	
