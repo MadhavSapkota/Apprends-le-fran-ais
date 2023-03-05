@@ -60,6 +60,9 @@
 	<string name="dashboard_challenge">1</string>
 	<string name="dashboard_diamond">510</string>
 	
+	//Dashboard Data
+	<string name="lesson_dataHeading">Unit 1</string>
+	<string name="lesson_dataSubHeading">Use basic phrases,greet people</string>
 	
 	
 	
