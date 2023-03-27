@@ -39,6 +39,7 @@
 		<activity android:name=".activity.levelcheck.LevelCheckActivity"/>
 		<activity android:name=".activity.startcheck.StartCheckActivity"/>
 		<activity android:name=".activity.quizscreen.QuizScreenActivity"/>
+		<activity android:name=".activity.dashboard.DashboardActivity"/>
 	
 	</application>
 </manifest>

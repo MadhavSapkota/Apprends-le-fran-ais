@@ -134,6 +134,7 @@
 		<FrameLayout
 			android:id="@+id/fragment_container_view_dashboard"
 			android:layout_width="match_parent"
+			android:layout_below="@+id/toolbar"
 			android:layout_height="match_parent"
 			android:layout_above="@+id/bottom_navigation" />
 		
